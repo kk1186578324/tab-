@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, dd, dl, dt, li, ol, ul,input,select,button,textarea
+{ padding:0; margin:0; border:none;}
+html,body{ width: 100%; min-width: 1200px; overflow-x: hidden; }
+input,button,select,textarea,a,img{outline:none; }/*去掉超链接或按钮点击时出现的虚线框黄色边框*/
+::-moz-focus-inner{border:0px;}/*火狐的私有属性去掉点击时边框*/
+article, aside, dialog, figure, footer, header, hgroup, nav, section, blockquote { display: block; }
+ul, ol { list-style: none; }
+img { border: 0 none; vertical-align: top; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+strong, em, i { font-style: normal; font-weight: normal; }
+ins { text-decoration: underline; }
+del { text-decoration: line-through; }
+mark { background: none; }
+input::-ms-clear { display: none !important; }
+input, textarea {border: 0;}
+body {font-size:12px; width:100%;  font-family:"Microsoft YaHei","Arial", "SimSun";}
+a { text-decoration: none; color: #333; }
+a:hover { text-decoration: none;}
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: ".";clear: both;height: 0;}
+* html .clearfix {zoom: 1;}
+*:first-child + html .clearfix {zoom: 1;}
+.fl {  float:left;}
+.fr {  float:right;}
+.none{  display:none;}
+/*公共样式*/
+.tab{
+	width:300px;
+}
+.tab .tab-nav{
+	height:30px;
+}
+.tab .tab-nav li{
+	float: left;
+	margin-right: 5px;
+	background-color: #767676;
+	border-radius: 3px 3px 0 0;
+}
+.tab .tab-nav li a{
+	display: block;
+	height:30px;
+	padding: 0 20px;
+	color: #fff;
+	line-height:30px;
+}
+.tab .tab-nav li.actived{
+	background-color:#fff;
+}
+.tab .tab-nav li.actived a{
+	color: #777;
+}
+.tab .content-wrap{
+	background-color:gray;
+	width: 300px;
+	padding: 5px;
+	height: 200px;
+}
+.content-item1{
+    width: 300px;
+	height: 200px;
+	background-color:#8fd61e;
+}
+.content-item2{
+	width: 300px;
+	height: 200px;
+	background-color:#1ed6a4;
+}
+.content-item3{
+	width: 300px;
+	height: 200px;
+	background-color:#1ed62f;
+}
+.content-item4{
+	width: 300px;
+	height: 200px;
+	background-color:#1e3cd6;
+}
+.tab .content-wrap .content-item{
+	position: absolute;
+	display: none;
+}
+.tab .content-wrap .current{
+    display: block;
+}
